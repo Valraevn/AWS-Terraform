@@ -1,6 +1,6 @@
-variable "vars" {
+variable "project" {
   type = map(string)
   default = {
-    AWS_ACCESS_KEY = ""
+    access_key = ""
   }
 }

@@ -9,7 +9,7 @@ terraform {
 // AWS provider
 provider "aws" {
   region     = "eu-west-2"
-  access_key = var.vars.AWS_ACCESS_KEY
+  access_key = var.project.access_key
   secret_key = "AWS_SECRET_KEY"
 }
 
