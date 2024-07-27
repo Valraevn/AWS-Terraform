@@ -7,7 +7,8 @@ jobs:
     env:
       AWS_KEY: ${{ secrets.urmum }}
     steps:
-      - run: echo "khuydtrgf"
+      - run: echo "fergt"
+      - uses: actions/checkout@v2
       - run: pwd
       - run: ls -la ./../../_temp
       - run: ls -la ./../
