@@ -9,8 +9,5 @@ jobs:
     steps:
       - run: echo $AWS_KEY
       - uses: actions/checkout@v2
-      - run: pwd
-      - run: ls -la ./../../_temp
-      - run: ls -la ./../
       - run: terraform init
-      - run: terraform plan
+      - run: terraform plan -var AWS_ACCESS_KEY=$AWS_KEY
