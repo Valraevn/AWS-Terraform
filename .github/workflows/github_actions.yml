@@ -5,7 +5,7 @@ jobs:
   First:
     runs-on: ubuntu-latest
     env:
-      AWS_KEY: ${{ secrets.urmum }}
+      AWS_KEY: ${{ secrets.AWS_KEY }}
     steps:
       - run: echo "$AWS_KEY"
       - uses: actions/checkout@v2
