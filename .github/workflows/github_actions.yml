@@ -7,6 +7,6 @@ jobs:
     env:
       AWS_KEY: ${{ secrets.urmum }}
     steps:
-      - run: echo ${{ AWS_KEY }}
+      - run: echo "${{ AWS_KEY }}""
       - run: terraform init
       - run: terraform plan
