@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       AWS_KEY: ${{ secrets.urmum }}
-    - run: echo ${{ AWS_KEY }}
-    - run: terraform init
-    - run: terraform plan
-    continue-on-error: true
+    steps:
+      - run: echo ${{ AWS_KEY }}
+      - run: terraform init
+      - run: terraform plan
