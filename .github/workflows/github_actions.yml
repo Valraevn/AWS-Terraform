@@ -8,5 +8,7 @@ jobs:
       AWS_KEY: ${{ secrets.urmum }}
     steps:
       - run: echo "khuydtrgf"
+      - run: pwd
+      - run: ls -la
       - run: terraform init
       - run: terraform plan
