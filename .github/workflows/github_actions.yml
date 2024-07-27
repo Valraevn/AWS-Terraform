@@ -7,7 +7,7 @@ jobs:
     env:
       AWS_KEY: ${{ secrets.urmum }}
     steps:
-      - run: echo $AWS_KEY
+      - run: echo ${{ env.AWS_KEY }}
       - uses: actions/checkout@v2
       - run: terraform init
-      - run: terraform plan -var access_key=$AWS_KEY
+      - run: terraform plan -var access_key=${{ env.AWS_KEY }}
