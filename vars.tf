@@ -1,6 +1,4 @@
-variable "project" {
-  type = map(string)
-  default = {
-    access_key = ""
-  }
+variable "access_key" {
+  type = string
+  default = ""
 }
