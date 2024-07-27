@@ -4,7 +4,10 @@ on: [push]
 jobs:
   First:
     runs-on: ubuntu-latest
-    steps:
-      - run: terraform init
-      - run: |
-          ls ${{ github.workspace }}
+    env:
+      AWS_KEY: ${{ secrets.urmum }}
+    - run: echo ${{ AWS_KEY }}
+    - run: terraform init
+    - run: terraform plan
+    continue-on-error: true
+    
