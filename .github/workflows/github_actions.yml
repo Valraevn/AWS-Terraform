@@ -10,4 +10,3 @@ jobs:
     - run: terraform init
     - run: terraform plan
     continue-on-error: true
-    
